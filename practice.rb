@@ -1,10 +1,36 @@
 def power(base,exp)
+	return 1 if exp==0 
+	return base if exp==1
+	return base*power(base,exp-1)
 end
 
 def fib(n)
+	return n if n==0 or n==1
+	return fib(n-1)+fib(n-2)
 end
 
 def pal(s)
+	return true if s=="" 
+	length=s.length
+	midpont=s.length/2
+	
+	#delete middle character if string has odd number of letters
+	s[midpont]='' if length%2 != 0
+	
+	#if only two letters left, check if they are the same.
+	#if they are then it is a palidrome (return true)
+	#otherwise it is not a palidrome
+	if length==2 
+		if s[0]==s[1]
+			return true
+		else
+			return false
+		end
+	end
+
+	#see if the two middle letters are the same 
+	#and if they are check if the rest of the middle letters are the same
+	return (pal(s.slice!(midpont-1..midpont)) and pal(s))
 end
 
 
@@ -17,10 +43,18 @@ puts "passes all fibanocci tests"
 
 # Palindrome Tests
 raise "pal broke - pal('racecar')" unless pal("racecar") == true
+raise "pal broke - pal('deleveled')" unless pal("deleveled") == true
 raise "pal broke - pal('helloworld')" unless pal("helloworld") == false
 raise "pal broke - pal('')" unless pal("") == true
 puts "passes all palindrome tests"
 
+#Power Tests
+raise "power broke - power(2,3)" unless power(2,3) == 8
+raise "power broke - power(2,4)" unless power(2,4) == 16
+raise "power broke - power(9000,0)" unless power(9000,0) == 1
+raise "power broke - power(243,12)" unless power(243,3) == 14348907
+raise "power broke - power(2,4)" unless power(3,15) == 14348907
+puts "passes all power tests"
 
 
 
