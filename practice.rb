@@ -1,13 +1,3 @@
-def power(base,exp)
-  if exp==1
-    return base
-  else
-    return base * power(base, exp - 1)
-  end
-
-end
-
-
 def fib(n)
   if n == 1
     return 1
@@ -31,8 +21,6 @@ def pal(s)
 end
 
 
-
-
 # Fibanocci Tests
 raise "fib broke - fib(8)" unless fib(8) == 21
 raise "fib broke - fib(20)" unless fib(20) == 6765
@@ -46,19 +34,29 @@ raise "pal broke - pal('helloworld')" unless pal("helloworld") == false
 raise "pal broke - pal('')" unless pal("") == true
 puts "passes all palindrome tests"
 
+def power(base,exp)
+  if exp==1
+    return base
+  else
+    return base * power(base, exp - 1)
+  end
 
-# def binary(n)
-#   if n == 0
-#     return 0
-#   elsif n == 1
-#     return 1
-#   end
-#   if n.odd?
-#     return 1 + binary(n-1)
-#   elsif n.even?
-#     return 9 + binary(n-1)
-#   end
-# end
+end
+
+
+def binary(n)
+  if n == 0
+    return 0
+  elsif n == 1
+    return 1
+  end
+  if n.odd?
+    return 1 + binary(n-1)
+  elsif  n % 2 ** x == 0
+    return binary(n-1) + (10 ** x - 1)
+  end
+end 
+
 
 # def travel(x,y)
 # end
