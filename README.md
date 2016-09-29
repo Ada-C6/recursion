@@ -211,6 +211,14 @@ and then returns the reverse of the string.
 
 - e.g. reverse("hello") = "olleh"
 
+**def reverse(str)
+    if str.length == 0
+      return ""
+    else
+      return str[-1] + reverse(str[0..-2])
+    end
+  end**
+
 ### Write #3
 `bunny(n)`
 Write a method `bunny` that accepts an integer parameter n. N represents a
