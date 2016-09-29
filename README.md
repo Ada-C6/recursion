@@ -196,6 +196,7 @@ Write a method `factorial` that accepts an integer parameter n and that uses rec
 
 - e.g. fact(4) = 4 * 3 * 2 * 1 = 24
 
+```
 **def fact(n)  
   if n == 1 || n == 0  
     return 1  
@@ -203,6 +204,7 @@ Write a method `factorial` that accepts an integer parameter n and that uses rec
     return n * fact(n-1)  
   end  
 end**  
+```
 
 ### Write #2
 `reverse(s)`
@@ -211,6 +213,7 @@ and then returns the reverse of the string.
 
 - e.g. reverse("hello") = "olleh"
 
+```
 **def reverse(str)  
     if str.length == 0  
       return ""  
@@ -218,6 +221,7 @@ and then returns the reverse of the string.
       return str[-1] + reverse(str[0..-2])  
     end  
   end**  
+```
 
 ### Write #3
 `bunny(n)`
