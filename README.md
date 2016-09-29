@@ -185,6 +185,19 @@ mystery5("Hi, there!")
 ""__  
 
 - _Added Fun: How could we make only alphabetic characters to be changed to stars?_
+```
+def mystery5(s)
+  if s.length == 0
+    return ""
+  else
+    if s[0] =~ /[a-zA-Z]/
+      return "*" + mystery5(s[1..-1])
+    else
+      return s[0] + mystery5(s[1..-1])
+    end
+  end
+end
+```
 
 ## Writing a recursive method
 
@@ -232,6 +245,16 @@ number of bunnies and each bunny has two big floppy ears. We want to compute the
 - e.g. bunny(1) = 2
 - e.g. bunny(10) = 20
 
+```
+def bunny(n)
+  if n == 0
+    return 0
+  else
+    2 + bunny(n-1)
+  end
+end
+```
+
 ### Write #4
 `nested(s)`
 Write a method `nested` that accepts a string of only parenthesis
@@ -241,8 +264,11 @@ assume that no non-paren characters will be passed to this method.
 - e.g. nested("((()))") = true
 - e.g. nested("())") = false
 
-
-
+```
+def nested(str)
+  
+end
+```
 
 
 ## More Added Fun (optional)
