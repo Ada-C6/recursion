@@ -65,8 +65,7 @@ mystery(12)
 2 + mystery(1)  
 mystery(1)  
 1  
-
-([Panopto](https://adaacademy.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=202b1920-9501-4fd3-ae41-7b35a50166ff) at 45:00)**  
+  ([Panopto](https://adaacademy.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=202b1920-9501-4fd3-ae41-7b35a50166ff) at 45:00)**  
 
 - What is mystery2(9005)? **5 + 0 + 0 + 9 = 14  
 5 + mystery(900)  
@@ -76,8 +75,7 @@ mystery(90)
 0 + mystery(9)  
 mystery(9)  
 9  
-
-([Panopto](https://adaacademy.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=202b1920-9501-4fd3-ae41-7b35a50166ff) at 45:00)**  
+  ([Panopto](https://adaacademy.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=202b1920-9501-4fd3-ae41-7b35a50166ff) at 45:00)**  
 
 - What is mystery2(-123)? **-123**  
 
