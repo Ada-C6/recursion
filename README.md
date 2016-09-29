@@ -197,13 +197,13 @@ Write a method `factorial` that accepts an integer parameter n and that uses rec
 - e.g. fact(4) = 4 * 3 * 2 * 1 = 24
 
 ```
-**def fact(n)  
+def fact(n)  
   if n == 1 || n == 0  
     return 1  
   else  
     return n * fact(n-1)  
   end  
-end**  
+end
 ```
 
 ### Write #2
@@ -214,13 +214,13 @@ and then returns the reverse of the string.
 - e.g. reverse("hello") = "olleh"
 
 ```
-**def reverse(str)  
+def reverse(str)  
     if str.length == 0  
       return ""  
     else  
       return str[-1] + reverse(str[0..-2])  
     end  
-  end**  
+  end
 ```
 
 ### Write #3
