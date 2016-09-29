@@ -66,7 +66,7 @@ mystery(12)
 mystery(1)  
 1  
 
-=> result = 6   ([Panopto](https://adaacademy.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=202b1920-9501-4fd3-ae41-7b35a50166ff) at 45:00)**  
+([Panopto](https://adaacademy.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=202b1920-9501-4fd3-ae41-7b35a50166ff) at 45:00)**  
 
 - What is mystery2(9005)? **5 + 0 + 0 + 9 = 14  
 5 + mystery(900)  
@@ -77,8 +77,7 @@ mystery(90)
 mystery(9)  
 9  
 
-=> result = 14  
- ([Panopto](https://adaacademy.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=202b1920-9501-4fd3-ae41-7b35a50166ff) at 45:00)**  
+([Panopto](https://adaacademy.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=202b1920-9501-4fd3-ae41-7b35a50166ff) at 45:00)**  
 
 - What is mystery2(-123)? **-123**  
 
@@ -167,7 +166,7 @@ end
 
 - What is mystery5("hi")? __"**"  
 mystery5("hi")  
-"*"" + mystery5("i")  
+"*" + mystery5("i")  
 "*" + mystery5("")  
 ""__  
 
