@@ -24,28 +24,28 @@ def mystery1(n)
 end
 ```
 
-- What is mystery1(5)? **15
-mystery1(5)
-5 + mystery1(4)
-4 + mystery1(3)
-3 + mystery1(2)
-2 + mystery1(1)
-1**
+- What is mystery1(5)? **15  
+mystery1(5)  
+5 + mystery1(4)  
+4 + mystery1(3)  
+3 + mystery1(2)  
+2 + mystery1(1)  
+1**  
 
-- What is mystery1(10)? **55
-mystery(10)
-10 + mystery1(9)
-9 + mystery1(8)
-8 + mystery1(7)
-7 + mystery1(6)
-6 + mystery1(5)
-5 + mystery1(4)
-4 + mystery1(3)
-3 + mystery1(2)
-2 + mystery1(1)
-1**
+- What is mystery1(10)? **55  
+mystery(10)  
+10 + mystery1(9)  
+9 + mystery1(8)  
+8 + mystery1(7)  
+7 + mystery1(6)  
+6 + mystery1(5)  
+5 + mystery1(4)  
+4 + mystery1(3)  
+3 + mystery1(2)  
+2 + mystery1(1)  
+1**  
 
-- What is mystery1(0)? **original guess was error - got stack level too deep (stackoverflow)**
+- What is mystery1(0)? **original guess was error - got stack level too deep (stackoverflow)**  
 
 ### Trace #2
 ```
@@ -58,28 +58,29 @@ def mystery2(n)
 end
 ```
 
-- What is mystery2(123)? **3 + 2 + 1 = 6
-mystery(123)
-3 + mystery(12)
-mystery(12)
-2 + mystery(1)
-mystery(1)
-1
+- What is mystery2(123)? **3 + 2 + 1 = 6  
+mystery(123)  
+3 + mystery(12)  
+mystery(12)  
+2 + mystery(1)  
+mystery(1)  
+1  
 
-=> result = 6 ([Panopto](https://adaacademy.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=202b1920-9501-4fd3-ae41-7b35a50166ff) at 45:00)**
+=> result = 6   ([Panopto](https://adaacademy.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=202b1920-9501-4fd3-ae41-7b35a50166ff) at 45:00)**  
 
-- What is mystery2(9005)? **5 + 0 + 0 + 9 = 14
-5 + mystery(900)
-mystery(900)
-0 + mystery(90)
-mystery(90)
-0 + mystery(9)
-mystery(9)
-9
+- What is mystery2(9005)? **5 + 0 + 0 + 9 = 14  
+5 + mystery(900)  
+mystery(900)  
+0 + mystery(90)  
+mystery(90)  
+0 + mystery(9)  
+mystery(9)  
+9  
 
-=> result = 14
- ([Panopto](https://adaacademy.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=202b1920-9501-4fd3-ae41-7b35a50166ff) at 45:00)**
-- What is mystery2(-123)? **-123**
+=> result = 14  
+ ([Panopto](https://adaacademy.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=202b1920-9501-4fd3-ae41-7b35a50166ff) at 45:00)**  
+
+- What is mystery2(-123)? **-123**  
 
 - _Added Fun: How could we make `mystery2(-123)` work the way we might expect it to work instead of the way it does?_
 **To add them all up as negatives (aka for the answer to be -6) just throw .abs on n in the 'if' line.**
@@ -100,30 +101,30 @@ def mystery3(n)
 end
 ```
 
-- What is mystery3(1)? **100
-mystery3(1)
-mystery3(0)
-result = 100**
+- What is mystery3(1)? **100  
+mystery3(1)  
+mystery3(0)  
+result = 100**  
 
-- What is mystery3(13)? **100
-mystery2(13)
-mystery2(12)
-mystery2(6)
-mystery2(3)
-mystery2(2)
-mystery2(1)
-mystery2(0)
-n == 0 => result = 100
- ([Panopto](https://adaacademy.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=202b1920-9501-4fd3-ae41-7b35a50166ff) at 1:09:00)**
+- What is mystery3(13)? **100  
+mystery2(13)  
+mystery2(12)  
+mystery2(6)  
+mystery2(3)  
+mystery2(2)  
+mystery2(1)  
+mystery2(0)  
+n == 0 => result = 100  
+ ([Panopto](https://adaacademy.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=202b1920-9501-4fd3-ae41-7b35a50166ff) at 1:09:00)**  
 
-- What is mystery3(-6)? **200
-mystery(-6)
-mystery(-3)
-mystery(-4)
-mystery(-2)
-mystery(-1)
-n == -1 => result = 200
- ([Panopto](https://adaacademy.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=202b1920-9501-4fd3-ae41-7b35a50166ff) at 1:09:00)**
+- What is mystery3(-6)? **200  
+mystery(-6)  
+mystery(-3)  
+mystery(-4)  
+mystery(-2)  
+mystery(-1)  
+n == -1 => result = 200  
+ ([Panopto](https://adaacademy.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=202b1920-9501-4fd3-ae41-7b35a50166ff) at 1:09:00)**  
 
 ### Trace #4
 ```
@@ -136,22 +137,22 @@ def mystery4(b,e)
 end
 ```
 
-- What is mystery4(10,2)? **100
-mystery4(10,2)
-10 * mystery4(10,1)
-10 * mystery4(10,0)
-1**
+- What is mystery4(10,2)? **100  
+mystery4(10,2)  
+10 * mystery4(10,1)  
+10 * mystery4(10,0)  
+1**  
 
-- What is mystery4(4,3)? **64
-mystery4(4,3)
-4 * mystery4(4,2)
-4 * mystery4(4,1)
-4 * mystery4(4,0)
-1**
+- What is mystery4(4,3)? **64  
+mystery4(4,3)  
+4 * mystery4(4,2)  
+4 * mystery4(4,1)  
+4 * mystery4(4,0)  
+1**  
 
-- What is mystery4(5,0)? **1
-mystery4(5,0)
-1**
+- What is mystery4(5,0)? **1  
+mystery4(5,0)  
+1**  
 
 ### Trace #5
 ```
@@ -164,27 +165,27 @@ def mystery5(s)
 end
 ```
 
-- What is mystery5("hi")? __"**"
-mystery5("hi")
-"*"" + mystery5("i")
-"*" + mystery5("")
-""__
+- What is mystery5("hi")? __"**"  
+mystery5("hi")  
+"*"" + mystery5("i")  
+"*" + mystery5("")  
+""__  
 
-- What is mystery5("")? **""**
+- What is mystery5("")? **""**  
 
-- What is mystery5("Hi, there!")? __"**********"
-mystery5("Hi, there!")
-"*" + mystery5("i, there!")
-"*" + mystery5(", there!")
-"*" + mystery5(" there!")
-"*" + mystery5("there!")
-"*" + mystery5("here!")
-"*" + mystery5("ere!")
-"*" + mystery5("re!")
-"*" + mystery5("e!")
-"*" + mystery5("!")
-"*" + mystery5("")
-""__
+- What is mystery5("Hi, there!")? __"**********"  
+mystery5("Hi, there!")  
+"*" + mystery5("i, there!")  
+"*" + mystery5(", there!")  
+"*" + mystery5(" there!")  
+"*" + mystery5("there!")  
+"*" + mystery5("here!")  
+"*" + mystery5("ere!")  
+"*" + mystery5("re!")  
+"*" + mystery5("e!")  
+"*" + mystery5("!")  
+"*" + mystery5("")  
+""__  
 
 - _Added Fun: How could we make only alphabetic characters to be changed to stars?_
 
@@ -198,13 +199,13 @@ Write a method `factorial` that accepts an integer parameter n and that uses rec
 
 - e.g. fact(4) = 4 * 3 * 2 * 1 = 24
 
-**def fact(n)
-  if n == 1 || n == 0
-    return 1
-  else
-    return n * fact(n-1)
-  end
-end**
+**def fact(n)  
+  if n == 1 || n == 0  
+    return 1  
+  else  
+    return n * fact(n-1)  
+  end  
+end**  
 
 ### Write #2
 `reverse(s)`
