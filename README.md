@@ -233,7 +233,7 @@ def reverse(str)
     else  
       return str[-1] + reverse(str[0..-2])  
     end  
-  end
+end
 ```
 
 ### Write #3
@@ -287,7 +287,6 @@ def nested(str)
 
     boo && nested(str[1..-2])
   end
-
 end
 ```
 
