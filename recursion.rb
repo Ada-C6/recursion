@@ -8,13 +8,44 @@ def factorial(n)
   end
 end
 
-def reverse(s)
+def reverse(str)
+    if str.length == 0
+      return ""
+    else
+      return str[-1] + reverse(str[0..-2])
+    end
 end
 
 def bunny(n)
+  if n == 0
+    return 0
+  else
+    2 + bunny(n-1)
+  end
 end
 
-def nested(s)
+def nested(str)
+  if str.length == 0
+    return true
+  else
+    num1 = 0
+
+    if str[0] == ")" || str[-1] == ")"
+      num1 += 1
+    end
+
+    if str[0] == "(" || str[-1] == "("
+      num1 -= 1
+    end
+
+    if num1 != 0
+      boo = false
+    else
+      boo = true
+    end
+
+    boo && nested(str[1..-2])
+  end
 end
 
 # Factorial Tests
@@ -33,8 +64,8 @@ raise "bunny broke - bunny(10)" unless bunny(10) == 20
 puts "passes all bunny tests"
 
 # Nested Tests
-raise "nested broke - nested('((()))')" unless reverse("((()))") == true
-raise "nested broke - nested('())')" unless reverse("())") == false
+raise "nested broke - nested('((()))')" unless nested("((()))") == true
+raise "nested broke - nested('())')" unless nested("())") == false
 puts "passes all nested tests"
 
 puts "All test passed"
