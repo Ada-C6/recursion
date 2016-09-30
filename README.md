@@ -266,10 +266,42 @@ assume that no non-paren characters will be passed to this method.
 
 ```
 def nested(str)
-  
+  if str.length == 0
+    return true
+  else
+    num1 = 0
+
+    if str[0] == ")" || str[-1] == ")"
+      num1 += 1
+    end
+
+    if str[0] == "(" || str[-1] == "("
+      num1 -= 1
+    end
+
+    if num1 != 0
+      boo = false
+    else
+      boo = true
+    end
+
+    boo && nested(str[1..-2])
+  end
+
 end
 ```
 
+**nested("(()))")  
+true && nested("())")  
+true && nested(")")  
+false && nested("")  
+true  
+
+[working backwards]  
+true && false => false  
+true && false => false  
+true && false => false  
+result: false**  
 
 ## More Added Fun (optional)
 
@@ -277,6 +309,8 @@ end
 Write a recursive method `fib` that accepts an integer n as a parameter and returns the nth [fibonacci number](https://en.wikipedia.org/wiki/Fibonacci#Fibonacci_sequence).
 
 - e.g. fib(4) = (1 1 2) 3 = 3
+
+
 
 ### pal(s)
 Write a recursive method `pal` that accepts a string s as a parameter and returns a boolean value indicating if that string is a [palindrome](https://en.wikipedia.org/wiki/Palindrome) or not.
