@@ -28,6 +28,19 @@ def nested(str)
   if str.length == 0
     return true
   else
+    new_str = str[0] + str[-1]
+    if new_str =~ (/(/)/)
+      true && nested(str[1..-2])
+    else
+      false && nested(str[1..-2])
+    end
+  end
+end
+
+def nested(str)
+  if str.length == 0
+    return true
+  else
     num1 = 0
 
     if str[0] == ")" || str[-1] == ")"

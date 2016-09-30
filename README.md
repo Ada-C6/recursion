@@ -269,15 +269,9 @@ def nested(str)
   if str.length == 0
     return true
   else
-    num1 = 0
+    new_str = str[0] + str[-1]
+    if new_str =~ (/)
 
-    if str[0] == ")" || str[-1] == ")"
-      num1 += 1
-    end
-
-    if str[0] == "(" || str[-1] == "("
-      num1 -= 1
-    end
 
     if num1 != 0
       boo = false
