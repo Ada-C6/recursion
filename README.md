@@ -310,6 +310,11 @@ Write a recursive method `fib` that accepts an integer n as a parameter and retu
 
 - e.g. fib(4) = (1 1 2) 3 = 3
 
+```
+def fib(n)
+
+end
+```
 
 
 ### pal(s)
@@ -317,3 +322,21 @@ Write a recursive method `pal` that accepts a string s as a parameter and return
 
 - e.g. pal("racecar") = true
 - e.g. pal("smile") = false
+
+```
+def pal(s)
+  if s == nil || s.length == 1
+    return true
+  else
+    boo = nil
+
+    if s[0] == s[-1]
+      boo = true
+    else
+      boo = false
+    end
+
+    boo && pal(s[1..-2])
+  end
+end
+```
