@@ -24,9 +24,9 @@ def mystery1(n)
 end
 ```
 
-- What is mystery1(5)?
-- What is mystery1(10)?
-- What is mystery1(0)?
+- What is mystery1(5)?   15
+- What is mystery1(10)?  55
+- What is mystery1(0)?   stack level too deep
 
 ### Trace #2
 ```
@@ -41,8 +41,8 @@ end
 
 - What is mystery2(123)? **3 + 2 + 1 = 6 ([Panopto](https://adaacademy.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=202b1920-9501-4fd3-ae41-7b35a50166ff) at 45:00)**
 - What is mystery2(9005)? **5 + 0 + 0 + 9 = 14 ([Panopto](https://adaacademy.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=202b1920-9501-4fd3-ae41-7b35a50166ff) at 45:00)**
-- What is mystery2(-123)?
-- _Added Fun: How could we make `mystery2(-123)` work the way we might expect it to work instead of the way it does?_
+- What is mystery2(-123)?  -123
+- _Added Fun: How could we make `mystery2(-123)` work the way we might expect it to work instead of the way it does?_    Use the absolute value of n
 
 ### Trace #3
 ```
@@ -60,7 +60,7 @@ def mystery3(n)
 end
 ```
 
-- What is mystery3(1)?
+- What is mystery3(1)?   100
 - What is mystery3(13)? **100 ([Panopto](https://adaacademy.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=202b1920-9501-4fd3-ae41-7b35a50166ff) at 1:09:00)**
 - What is mystery3(-6)? **200 ([Panopto](https://adaacademy.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=202b1920-9501-4fd3-ae41-7b35a50166ff) at 1:09:00)**
 
@@ -75,9 +75,9 @@ def mystery4(b,e)
 end
 ```
 
-- What is mystery4(10,2)?
-- What is mystery4(4,3)?
-- What is mystery4(5,0)?
+- What is mystery4(10,2)?   100
+- What is mystery4(4,3)?    64
+- What is mystery4(5,0)?    1
 
 ### Trace #5
 ```
@@ -90,9 +90,9 @@ def mystery5(s)
 end
 ```
 
-- What is mystery5("hi")?
-- What is mystery5("")?
-- What is mystery5("Hi, there!")?
+- What is mystery5("hi")?            "**"
+- What is mystery5("")?              ""
+- What is mystery5("Hi, there!")?    "**********"
 - _Added Fun: How could we make only alphabetic characters to be changed to stars?_
 
 ## Writing a recursive method
