@@ -270,16 +270,11 @@ def nested(str)
     return true
   else
     new_str = str[0] + str[-1]
-    if new_str =~ (/)
-
-
-    if num1 != 0
-      boo = false
+    if new_str == "()"
+      true && nested(str[1..-2])
     else
-      boo = true
+      false && nested(str[1..-2])
     end
-
-    boo && nested(str[1..-2])
   end
 end
 ```

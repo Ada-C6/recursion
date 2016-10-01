@@ -29,7 +29,7 @@ def nested(str)
     return true
   else
     new_str = str[0] + str[-1]
-    if new_str =~ (/(/)/)
+    if new_str == "()"
       true && nested(str[1..-2])
     else
       false && nested(str[1..-2])
