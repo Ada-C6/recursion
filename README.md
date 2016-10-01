@@ -154,7 +154,7 @@ end
 - What is mystery5("")? ```""```
 - What is mystery5("Hi, there!")? ```"**********"```
 - _Added Fun: How could we make only alphabetic characters to be changed to stars?_
-  ##IS there a way without using regex?? 
+  ##IS there a way without using regex??
 
 
 ```
@@ -168,7 +168,7 @@ mystery5("")              ^
 
 
 
-## Writing a recursive method
+## Writing a recursive method  -- See File for mine!
 
 **You should attempt at least 1 of the following problems. We did #1 together in class, so you will find that solution in the recursion.rb file. You can use the tracing problems above to help give you an idea of what the methods may look like at the end, but remember to look for patterns between multiple examples to help you generalize before writing the code.**
 
@@ -193,6 +193,8 @@ number of bunnies and each bunny has two big floppy ears. We want to compute the
 - e.g. bunny(0) = 0
 - e.g. bunny(1) = 2
 - e.g. bunny(10) = 20
+
+
 
 ### Write #4
 `nested(s)`

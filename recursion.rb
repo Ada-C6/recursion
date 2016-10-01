@@ -82,4 +82,51 @@ raise "nested broke - nested('((()))')" unless nested("((()))") == true
 raise "nested broke - nested('())')" unless nested("())") == false
 puts "passes all nested tests"
 
+
+
+
+
+### Added Fun ###
+
+# ### fib(n)
+# Write a recursive method `fib` that accepts an integer n as a parameter and returns the nth [fibonacci number](https://en.wikipedia.org/wiki/Fibonacci#Fibonacci_sequence).
+#
+# - e.g. fib(4) = (1 1 2) 3 = 3
+#1 1 2 3 5 8 13 21 34 55
+
+def fib(n)
+  if n <= 2
+    return 1
+  else
+    return 2 + fib(n-1)
+  end
+end
+
+raise "fib broke - fib(5)" unless fib(5) == 5
+raise "fib broke - fib(8)" unless fib(8) == 21
+puts "passes all fib tests"
+
+
+
+# ### pal(s)
+# Write a recursive method `pal` that accepts a string s as a parameter and returns a boolean value indicating if that string is a [palindrome](https://en.wikipedia.org/wiki/Palindrome) or not.
+#
+# - e.g. pal("racecar") = true
+# - e.g. pal("smile") = false
+
+def pal(string)
+  if string == ""
+    return true
+  elsif string[0] == string[-1]
+    return pal(string[1..-2])
+  else
+    return false
+  end
+end
+
+raise "pal broke - pal(anna)" unless pal("anna") == true
+raise "pal broke - pal(cat)" unless pal("cat") == false
+puts "passes all pal tests"
+
+
 puts "All test passed"
