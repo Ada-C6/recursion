@@ -9,9 +9,6 @@ def fact(n)
   end
 end
 
-# Write a method `reverse` that accepts a string as a parameter
-# and then returns the reverse of the string.
-# - e.g. reverse("hello") = "olleh"
 def reverse(s)
   var = ""
   if s == ""
@@ -22,12 +19,12 @@ def reverse(s)
   return var
 end
 
-# Write a method `bunny` that accepts an integer parameter n. N represents a
-# number of bunnies and each bunny has two big floppy ears. We want to compute the total number of ears across all the bunnies recursively (without loops or multiplication).
-# - e.g. bunny(0) = 0
-# - e.g. bunny(1) = 2
-# - e.g. bunny(10) = 20
 def bunny(n)
+  if n == 0
+    return 0
+  else
+    return 2 + bunny(n-1)
+  end
 end
 
 # Write a method `nested` that accepts a string of only parenthesis
