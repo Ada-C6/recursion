@@ -46,9 +46,14 @@ def nested(s)
   return result
 end
 
-# Write a recursive method `fib` that accepts an integer n as a parameter and returns the nth [fibonacci number](https://en.wikipedia.org/wiki/Fibonacci#Fibonacci_sequence).
-# - e.g. fib(4) = (1 1 2) 3 = 3
 def fib(n)
+  if n <= 0
+    return 0
+  elsif n == 1
+    return 1
+  else
+    return fib(n-1) + fib(n-2)
+  end
 end
 
 def pal(s)
