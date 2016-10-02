@@ -37,30 +37,6 @@ def nested(str)
   end
 end
 
-def nested(str)
-  if str.length == 0
-    return true
-  else
-    num1 = 0
-
-    if str[0] == ")" || str[-1] == ")"
-      num1 += 1
-    end
-
-    if str[0] == "(" || str[-1] == "("
-      num1 -= 1
-    end
-
-    if num1 != 0
-      boo = false
-    else
-      boo = true
-    end
-
-    boo && nested(str[1..-2])
-  end
-end
-
 # Factorial Tests
 raise "factorial broke - factorial(4)" unless factorial(4) == 24
 raise "factorial broke - factorial(0)" unless factorial(0) == 1
