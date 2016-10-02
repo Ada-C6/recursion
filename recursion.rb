@@ -51,8 +51,13 @@ end
 def fib(n)
 end
 
-# Write a recursive method `pal` that accepts a string s as a parameter and returns a boolean value indicating if that string is a [palindrome](https://en.wikipedia.org/wiki/Palindrome) or not.
-# - e.g. pal("racecar") = true
-# - e.g. pal("smile") = false
 def pal(s)
+  result = true
+  if s[0] != s[-1]
+    result = false
+    return result
+  elsif s.length > 1
+    return pal(s[1..-2])
+  end
+  return result
 end
