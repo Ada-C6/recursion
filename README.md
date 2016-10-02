@@ -299,10 +299,13 @@ Write a recursive method `fib` that accepts an integer n as a parameter and retu
 
 ```
 def fib(n)
-
+  if n == 0 || n == 1
+    return n
+  else
+    fib(n-1) + fib(n-2)
+  end
 end
 ```
-
 
 ### pal(s)
 Write a recursive method `pal` that accepts a string s as a parameter and returns a boolean value indicating if that string is a [palindrome](https://en.wikipedia.org/wiki/Palindrome) or not.
