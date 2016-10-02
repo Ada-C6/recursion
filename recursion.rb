@@ -27,12 +27,23 @@ def bunny(n)
   end
 end
 
-# Write a method `nested` that accepts a string of only parenthesis
-# and then returns if those parenthesis are properly nested. You may
-# assume that no non-paren characters will be passed to this method.
-# - e.g. nested("((()))") = true
-# - e.g. nested("())") = false
+# This works with the examples given. However, in the case of something like "()(()())",
+# it fails. Technically, that example is nested correctly, but in a horrid manner. I
+# think the example we did during class, where ( = 1 and ) = -1 would be a better
+# approach, in that case, summing the numbers and returning false if the total became
+# negative.
 def nested(s)
+  result = true
+  if s.length % 2 == 1
+    result = false
+    return result
+  elsif s[0] == s[-1]
+    result = false
+    return result
+  elsif s.length >= 2
+    return nested(s[1..-2])
+  end
+  return result
 end
 
 # Write a recursive method `fib` that accepts an integer n as a parameter and returns the nth [fibonacci number](https://en.wikipedia.org/wiki/Fibonacci#Fibonacci_sequence).
@@ -45,15 +56,3 @@ end
 # - e.g. pal("smile") = false
 def pal(s)
 end
-
-
-
-# Factorial Tests
-# raise "factorial broke - fact(4)" unless fact(4) == 24
-# raise "factorial broke - fact(0)" unless fact(0) == 1
-# puts "passes all factorial tests"
-
-# Reverse Tests
-
-
-# puts "All test passed"
