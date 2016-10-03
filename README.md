@@ -318,15 +318,11 @@ def pal(s)
   if s == nil || s.length == 1
     return true
   else
-    boo = nil
-
-    if s[0] == s[-1]
-      boo = true
+    if s[0].upcase == s[-1].upcase
+      true && pal(s[1..-2])
     else
-      boo = false
+      false && pal(s[1..-2])
     end
-
-    boo && pal(s[1..-2])
   end
 end
 ```
