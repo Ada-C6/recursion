@@ -34,6 +34,24 @@ def nested(str)
   end
 end
 
+def fib(n)
+  if n == 0 || n == 1
+    return n
+  else
+    fib(n-1) + fib(n-2)
+  end
+end
+
+def pal(s)
+  if s == nil || s.length == 1
+    return true
+  elsif s[0].upcase == s[-1].upcase
+    return pal(s[1..-2])
+  else
+    return false
+  end
+end
+
 # Factorial Tests
 raise "factorial broke - factorial(4)" unless factorial(4) == 24
 raise "factorial broke - factorial(0)" unless factorial(0) == 1
