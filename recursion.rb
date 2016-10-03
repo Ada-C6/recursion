@@ -27,13 +27,10 @@ end
 def nested(str)
   if str.length == 0
     return true
+  elsif str[0] + str[-1] == "()"
+    return nested(str[1..-2])
   else
-    new_str = str[0] + str[-1]
-    if new_str == "()"
-      nested(str[1..-2])
-    else
-      false
-    end
+    return false
   end
 end
 
