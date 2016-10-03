@@ -271,9 +271,9 @@ def nested(str)
   else
     new_str = str[0] + str[-1]
     if new_str == "()"
-      true && nested(str[1..-2])
+      nested(str[1..-2])
     else
-      false && nested(str[1..-2])
+      false
     end
   end
 end
@@ -319,9 +319,9 @@ def pal(s)
     return true
   else
     if s[0].upcase == s[-1].upcase
-      true && pal(s[1..-2])
+      pal(s[1..-2])
     else
-      false && pal(s[1..-2])
+      false
     end
   end
 end
