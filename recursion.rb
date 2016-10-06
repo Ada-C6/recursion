@@ -57,12 +57,10 @@ def fib(n)
 end
 
 def pal(s)
-  result = true
   if s[0] != s[-1]
-    result = false
-    return result
+    return false
   elsif s.length > 1
     return pal(s[1..-2])
   end
-  return result
+  return true
 end
